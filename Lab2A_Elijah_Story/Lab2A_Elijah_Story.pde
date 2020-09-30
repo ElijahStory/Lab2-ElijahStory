@@ -22,13 +22,15 @@ void setup(){
   noStroke();  //removes outlines
 }
 
+//Class that makes the triShape
 class triShape{
   float x, y;
-  triShape(float startX, float startY){
+  triShape(float startX, float startY){ //Initialize the variables used
     x = startX;
     y = startY;
   }
   
+  //Draw the two triangles used in the class
   void display(){
     fill(255, 170, 10, 100);
     triangle(x-150,y-150,x-150,y+50,y+50,y+50);
@@ -41,8 +43,7 @@ class triShape{
 
 void draw(){
   background(170);
-  tri1.display();
+  tri1.display();     //displays both objects
   tri2.display();
   fill(0);
-  circle(250,250,10);
 }
